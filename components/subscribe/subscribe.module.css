@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+.panelContainer {
+	background-image: linear-gradient(to bottom right, #D21873, #501E53);
+	border-radius: 15px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+	padding: 30px;
+	margin: 15px;
+	z-index: 1;
+	
+	justify-content: center;
+	align-items: center;
+}
+
+.panelContainer input {
+	text-align: center;
+}
+.panelContainer h4 {
+	margin-bottom: 20px;
+	letter-spacing: 0.5px;
+	padding-top: 10px;
+}
+
+.panelContainer input, .panelContainer button {
+	border: none;
+	border-radius: 3px;
+	display: block;
+	font-size: 12px;
+	padding: 7px 10px;
+	margin: 15px 0;
+	width: 100%;
+}
+
+.panelContainer button {
+	background-image: linear-gradient(to bottom right, #D21873, #501E53);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	color: #fff;
+}
+
+.panelContainer button:hover {
+	cursor: pointer;
+}
+
+.panelContainer small {
+	font-size: 0.75em;
+	line-height: 10px;
+	opacity: 0.5;
+}
+
+.panelContainer small:first-of-type {
+	text-transform: uppercase;
+}
+
+.footer {
+	background-color: #222;
+	color: #fff;
+	bottom: 0;
+	position: fixed;
+	left: 0;
+	right: 0;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.footer p {
+	font-size: 1em;
+	margin: 5px 0;
+}
+
+.footer i {
+	color: red;
+}
+
+.footer a {
+	color: #3C97BF;
+	text-decoration: none;
+}
