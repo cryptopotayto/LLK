@@ -20,7 +20,6 @@ function Home(props) {
       <main className={`${styles.main} ${inter.className}`}>
         {/* <LandingBackground /> */}
         <SubscribeBar />
-        {props.ssrWorking ? <h2>SSR working</h2> : <h2>SSR not working</h2>}
         </main>
     </>
   );
