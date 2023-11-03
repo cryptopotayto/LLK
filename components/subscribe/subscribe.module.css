@@ -76,3 +76,9 @@
 	color: #3C97BF;
 	text-decoration: none;
 }
+
+@media (min-width: 768px) {
+	.panelContainer {
+	  transform: scale(.7);
+	}
+  }
