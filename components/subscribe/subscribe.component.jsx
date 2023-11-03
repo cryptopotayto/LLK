@@ -76,7 +76,6 @@ function SubscribeBar () {
             };
             break;
     }
-    console.log(notification);
     return (
     <Fragment>
         <div className={classes.panelContainer}>
@@ -101,7 +100,7 @@ function SubscribeBar () {
                 Featuring weekly challenges, promos, and prizes! 
             </small>
         </div> 
-    
+        
         {notification && (<Notification notification={notification}/>)}
 </Fragment>
     );
