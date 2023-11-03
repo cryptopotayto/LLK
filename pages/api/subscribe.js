@@ -22,16 +22,31 @@ async function handler(req, res) {
 
         try {
             const db = selectDB(client, 'LLK');
+            const existingEmail = await db.collection(collection).findOne({ 'obj.email': userEmail });
+            const myMother = await db.collection(collection).findOne({ 'obj.email': 'rscraig70@gmail.com'});
+            
+            if(myMother){
+                res.status(422).json({ message: 'Fuckwit'});
+                client.close();
+                return;
+            }
+            if(existingEmail) {
+                res.status(422).json({ message: 'You have already signed up'});
+                client.close();
+                return;
+            }
             await insertDocument(db, collection,  { email: userEmail } );
-            client.close();
+            
         } catch (error) {
             res.status(500).json({ message: 'Document creation failed'});
+            client.close;
             return;
         }
         
         
 
         res.status(201).json({ message: 'Signed Up' });
+        client.close;
     }
 }
 
