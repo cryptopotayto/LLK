@@ -3,8 +3,8 @@
     object-fit: contain;
     overflow: hidden;
     max-width: 100%;
-    height: auto;
-    position: absolute;
+    height: 100vh;
+    position: center center;
     background-repeat: repeat;
 }
 
