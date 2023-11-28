@@ -1,8 +1,5 @@
 import Head from 'next/head'
 import SubscribeBar from '@/components/subscribe/subscribe.component'
-
-
-
 function Home(props) {
   return (
     <>
@@ -15,6 +12,8 @@ function Home(props) {
       </Head>
       <main>
         {/* <LandingBackground /> */}
+        {/* Main Landing Page */}
+        {/* Sidebar Navigation */}
         <SubscribeBar />
         </main>
     </>
